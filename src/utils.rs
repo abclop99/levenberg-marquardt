@@ -59,7 +59,7 @@ cfg_if::cfg_if! {
 /// ```rust
 /// # use levenberg_marquardt::{LeastSquaresProblem, differentiate_numerically};
 /// # use approx::assert_relative_eq;
-/// # use nalgebra::{convert, ComplexField, storage::Owned, Matrix2, Vector2, OVector, U2};
+/// # use levenberg_marquardt::nalgebra::{convert, ComplexField, storage::Owned, Matrix2, Vector2, OVector, U2};
 /// #
 /// # struct ExampleProblem<F: ComplexField> {
 /// #     p: Vector2<F>,
@@ -156,8 +156,8 @@ where
 /// ```rust
 /// # use levenberg_marquardt::{LeastSquaresProblem, differentiate_holomorphic_numerically};
 /// # use approx::assert_relative_eq;
-/// # use nalgebra::{storage::Owned, Complex, Matrix2, Vector2, OVector, U2};
-/// use nalgebra::{ComplexField, convert};
+/// # use levenberg_marquardt::nalgebra::{storage::Owned, Complex, Matrix2, Vector2, OVector, U2};
+/// use levenberg_marquardt::nalgebra::{ComplexField, convert};
 ///
 /// struct ExampleProblem<F: ComplexField> {
 ///     params: Vector2<F>,

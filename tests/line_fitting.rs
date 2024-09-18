@@ -1,10 +1,10 @@
 use arrsac::Arrsac;
-use levenberg_marquardt::{LeastSquaresProblem, LevenbergMarquardt};
-use nalgebra::{
+use levenberg_marquardt::nalgebra::{
     dimension::{U1, U2},
     storage::Owned,
     Dim, Dyn, Matrix, Matrix2, OMatrix, VecStorage, Vector2,
 };
+use levenberg_marquardt::{LeastSquaresProblem, LevenbergMarquardt};
 use pcg_rand::Pcg64;
 use rand::distributions::Uniform;
 use rand::{distributions::Distribution, Rng};

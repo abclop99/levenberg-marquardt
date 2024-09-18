@@ -49,8 +49,8 @@
 //! ```
 //!
 //! ```
-//! # use nalgebra::*;
-//! # use nalgebra::storage::Owned;
+//! # use levenberg_marquardt::nalgebra::*;
+//! # use levenberg_marquardt::nalgebra::storage::Owned;
 //! # use levenberg_marquardt::{LeastSquaresProblem, LevenbergMarquardt};
 //! struct ExampleProblem {
 //!     // holds current value of the n parameters
@@ -112,6 +112,8 @@
 #![cfg_attr(feature = "RUSTC_IS_NIGHTLY", core_intrinsics)]
 
 extern crate alloc;
+
+pub use nalgebra;
 
 mod lm;
 mod problem;
